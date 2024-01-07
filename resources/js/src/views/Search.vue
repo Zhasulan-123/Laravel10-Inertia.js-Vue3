@@ -29,16 +29,18 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import Header from '../components/Header.vue';
 import { Link } from '@inertiajs/vue3';
 
 export default {
   props: { items: Array},
   components: { Header, Link },
-  data() {
+  setup() {
+    const searchQuery = ref('');
     return {
-      searchQuery: ''
-    };
+        searchQuery
+    }
   },
   computed: {
     filteredItems() {
@@ -49,6 +51,7 @@ export default {
   },
 };
 </script>
+
 
 <style lang="scss" scoped>
 /* Add your component styles here */

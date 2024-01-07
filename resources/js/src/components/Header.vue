@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar bg-primary navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">ASTANA</a>
+            <Link class="navbar-brand" href="/">Images</Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
